@@ -12,7 +12,7 @@ import {PartnerShowcase} from '../components/TrustedPartners';
 import {CardContainer} from '../components/goalsCard';
 import {CardContainerSupplements} from '../components/supplements';
 import {HealthFitness} from '../components/health&Fitnesssection';
-//import {RealTestimonialsContainer} from '../components/realTestimonials';
+import {RealTestimonialsContainer} from '../components/realTestimonials';
 import {CardContainerBundles} from '../components/Bundles';
 
 export const meta: MetaFunction = () => {
@@ -73,6 +73,7 @@ export default function Homepage() {
       <CardContainer />
       <CardContainerSupplements />
       <HealthFitness />
+      <RealTestimonialsContainer />
       <CardContainerBundles />
     </div>
   );

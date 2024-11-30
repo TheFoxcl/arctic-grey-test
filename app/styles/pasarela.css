@@ -1,0 +1,27 @@
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  height: 3rem; /* Ajusta la altura según tus necesidades */
+  background: black;
+}
+
+.marquee-content {
+  display: flex;
+  width: 200%; /* Asegura que el contenido ocupe el doble del ancho del contenedor */
+  animation: marquee 15s linear infinite; /* Ajusta la duración de la animación según tus necesidades */
+}
+
+.marquee-content span {
+  flex-shrink: 0;
+  white-space: nowrap;
+}

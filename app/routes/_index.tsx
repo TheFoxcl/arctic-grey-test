@@ -6,6 +6,14 @@ import type {
   FeaturedCollectionFragment,
   RecommendedProductsQuery,
 } from 'storefrontapi.generated';
+import {BackgroundVideo} from '../components/videoBanner';
+import {ScrollingText} from '../components/pasarela';
+import {PartnerShowcase} from '../components/TrustedPartners';
+import {CardContainer} from '../components/goalsCard';
+import {CardContainerSupplements} from '../components/supplements';
+import {HealthFitness} from '../components/health&Fitnesssection';
+//import {RealTestimonialsContainer} from '../components/realTestimonials';
+import {CardContainerBundles} from '../components/Bundles';
 
 export const meta: MetaFunction = () => {
   return [{title: 'Hydrogen | Home'}];
@@ -59,8 +67,13 @@ export default function Homepage() {
   const data = useLoaderData<typeof loader>();
   return (
     <div className="home">
-      <FeaturedCollection collection={data.featuredCollection} />
-      <RecommendedProducts products={data.recommendedProducts} />
+      <BackgroundVideo />
+      <ScrollingText />
+      <PartnerShowcase />
+      <CardContainer />
+      <CardContainerSupplements />
+      <HealthFitness />
+      <CardContainerBundles />
     </div>
   );
 }

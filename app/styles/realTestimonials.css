@@ -1,0 +1,23 @@
+.swiper {
+  width: 100%;
+  height: 33rem;
+}
+
+.swiper-slide {
+  border-radius: 8px;
+  font-size: 18px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  border-radius: 8px;
+  overflow: hidden;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 33rem;
+  object-fit: cover;
+}
